@@ -1,0 +1,17 @@
+.latest-course-item:hover .latest-course-item-image {
+  color: rebeccapurple;
+}
+.button-second {
+  display: none;
+  position: absolute;
+  height: 30px;
+  width: 103px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 90px;
+  margin-top: 100px;
+}

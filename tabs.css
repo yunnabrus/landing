@@ -1,0 +1,60 @@
+.UsBackTabsLess .us-back {
+  width: 600px;
+  height: 360px;
+  background: #ccc;
+}
+.UsBackTabsLess .about {
+  position: absolute;
+}
+.UsBackTabsLess .block {
+  top: 26px;
+  left: 50px;
+  right: 40px;
+  bottom: 20px;
+  display: none;
+}
+.UsBackTabsLess a {
+  text-decoration: none;
+  color: #222;
+  margin-right: 20px;
+}
+.UsBackTabsLess a:hover {
+  color: #000;
+}
+.UsBackTabsLess a:visited {
+  font-weight: bold;
+}
+.UsBackTabsLess .tabs {
+  background: #ededed;
+  font-family: monostace;
+  top: 58px;
+  width: 520px;
+  height: 270px;
+}
+.UsBackTabsLess .tabs p {
+  top: 16px;
+  font-family: monostace;
+}
+.UsBackTabsLess p {
+  font-size: 44px;
+  font-family: monostace;
+  top: 48px;
+  left: 70px;
+  color: #aaa;
+  line-height: 44px;
+}
+.UsBackTabsLess #one {
+  display: block;
+}
+.UsBackTabsLess div:target {
+  display: block;
+}
+.UsBackTabsLess div[id*=tab]:target {
+  display: block;
+}
+.UsBackTabsLess div[id*=tab]:target ~ #tab {
+  display: block;
+}
+.UsBackTabsLess div[id*=t]:target ~ #one {
+  display: none;
+}
