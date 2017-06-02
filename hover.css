@@ -1,5 +1,4 @@
 .latest-course-item:hover .latest-course-item-image {
-  position: absolute;
   background-color: rebeccapurple;
 }
 .button-second {
@@ -15,7 +14,4 @@
   line-height: 30px;
   margin-left: 90px;
   margin-top: 100px;
-}
-.teacher-face-blok:hover .teacher-face-blok-foto {
-  background-color: rebeccapurple;
 }
