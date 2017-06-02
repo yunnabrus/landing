@@ -159,6 +159,8 @@ img {
   justify-content: space-between;
   padding: 0 18px;
   align-items: center;
+  background-color: black;
+  color: white;
 }
 .latest-courses .latest-courses-container .latest-course-item .latest-course-item-descr {
   height: 118px;
@@ -167,6 +169,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 0 18px;
+  color: white;
   height: 50px;
   line-height: 50px;
 }
@@ -425,26 +428,27 @@ img {
 }
 .us-back .us-back-text-conteiner .us-back-text-content {
   width: calc(460px);
+  /*.us-back-text-content-tabs {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;  
+                                            margin-top: -17px;                                          
+                                                /*.us-back-text-content-tabs-one{  
+                                                    width: calc(@content-width/2 - 55px);                                                  
+                                                    height: 25px;
+                                                    border: 1px solid @light-silver;
+                                                    margin-top: 3px;
+                                                }
+                                        }*/
 }
 .us-back .us-back-text-conteiner .us-back-text-content .us-back-text {
   padding-top: 4px;
 }
 .us-back .us-back-text-conteiner .us-back-text-content .us-back-text h6 {
   margin-top: -3px;
+  margin-bottom: 12px;
   font-size: 12px;
   line-height: 1.5em;
-}
-.us-back .us-back-text-conteiner .us-back-text-content .us-back-text-content-tabs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: -17px;
-}
-.us-back .us-back-text-conteiner .us-back-text-content .us-back-text-content-tabs .us-back-text-content-tabs-one {
-  width: calc(405px);
-  height: 25px;
-  border: 1px solid #BBB;
-  margin-top: 3px;
 }
 .us-back .us-back-text-conteiner .us-back-text-content .us-back-text-content-button {
   height: 30px;
