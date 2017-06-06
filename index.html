@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="tabs.css" />
 	</head>
     <body>
-        <image class="temp-back" src="landing.png" >
+        <!--<image class="temp-back" src="landing.png" >-->
         <div class="nav">
             <div class="logo">
                 <div class="logo-image"></div>
@@ -31,16 +31,16 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. Esse ipsam iste, voluptatum earum nobis vel a unde tempora suscipit. Unde earum magnam sapiente, omnis quisquam officia eveniet.
                 </div>
                 <div class="join-us-content-button">Join Us ></div>
-                <div class="join-us-content-nav join-us-content-nav-left"><</div>
-                <div class="join-us-content-nav join-us-content-nav-right">></div>
+                <div class="join-us-content-nav join-us-content-nav-left" onclick="leftAlert()"><</div>
+                <div class="join-us-content-nav join-us-content-nav-right" onclick="rightAlert()">></div>
             </div>
         </div>
         <div class="latest-courses">
             <div class="latest-courses-label">Latest Courses</div>
             <div class="latest-courses-container">
                 <div class="latest-course-item">
-                    <div class="latest-course-item-image">
-                        <img src="img/teacher.png" width="290px" height="220px">
+                    <div class="latest-course-item-image" id="latest-course-item-image">
+                        <!--<img src="img/teacher.png" width="290px" height="220px">-->
                         <div class="button-second"> Learn More </div>
                     </div>
                     <div class="latest-course-item-title">
@@ -66,7 +66,7 @@
                 </div>
                 <div class="latest-course-item">
                     <div class="latest-course-item-image">
-                        <img src="img/teacher.png" width="290px" height="220px">
+                        <!--<img src="img/teacher.png" width="290px" height="220px">-->
                         <div class="button-second"> Learn More </div>
                     </div>
                     <div class="latest-course-item-title">
@@ -92,14 +92,14 @@
                 </div>
                 <div class="latest-course-item">
                     <div class="latest-course-item-image">
-                        <img src="img/teacher.png" width="290px" height="220px">
+                        <!--<img src="img/teacher.png" width="290px" height="220px">-->
                         <div class="button-second"> Learn More </div>
                     </div>
                     <div class="latest-course-item-title">
                         <div>Desing Practice</div>
                         <div>$45</div>
                     </div>
-                    <div class="latest-course-item-descr" style="background-color: #35b794">
+                    <div class="latest-course-item-descr" style="background-color: #35b767">
                         <div class="course-item-descr-first-block">
                             <div class="course-item-descr-date">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -117,7 +117,7 @@
             </div>
         </div>
     </div></div>
-        <div class="zelle-conteiner">
+        <div class="zelle-three-color">
                 <div class="zelle-conteiner-color-red"></div>
                 <div class="zelle-conteiner-color-yellow"></div>
                 <div class="zelle-conteiner-color-green"></div>
@@ -142,7 +142,7 @@
                 <div class="icons-conteiner-icon-badge">
                     <i class="fa fa-television" aria-hidden="true"></i>
                 </div>
-                <div class="icons-conteiner-icon-badge-color">
+                <div class="icons-conteiner-icon-badge">
                     <i class="fa fa-recycle" aria-hidden="true"></i>
                 </div>
                 <div class="icons-conteiner-icon-badge">
@@ -175,8 +175,57 @@
                         <div class="number"> 120 </div> <div class="text"> Events </div>
                     </div>
             </div>
-            <div class="work"></div>
-            <div class="picture"></div>
+            <div class="work">
+                <div class="work-text">How We Work</div>
+                <div class="work-blok">
+                    <div class="work-blok-vertical"></div>
+                    <div class="work-blok-first">
+                        <div class="work-blok-first-figure">
+                            <div class="work-blok-first-figure-fa">
+                                    <i class="fa fa-genderless" aria-hidden="true"></i>
+                                    <div class="work-blok-first-figure-text">
+                                        <h3> SEARCH YOUR COURSE </h3>
+                                        <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
+                                        </div></div>
+                            <div class="work-blok-first-angle-figure"></div>
+                        </div>
+                        <div class="work-blok-first-circle"></div>
+                        <div class="work-blok-first-step"> Step 1 </div>
+                    </div>
+                    <div class="work-blok-second">
+                        <div class="work-blok-second-step"> Step 2 </div>
+                        <div class="work-blok-second-circle"></div>                                          
+                        <div class="work-blok-second-figure">
+                            <div class="work-blok-second-angle-figure"></div>
+                            <div class="work-blok-second-figure-fa">                                
+                                <div class="work-blok-second-figure-text">
+                                    <h3> SEARCH YOUR COURSE </h3>
+                                    <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
+                                </div>
+                                <i class="fa fa-television" aria-hidden="true"></i>
+                            </div>                            
+                            </div>
+                    </div>
+                    <div class="work-blok-third">
+                        <div class="work-blok-third-figure">
+                            <div class="work-blok-third-figure-fa">
+                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                    <div class="work-blok-third-figure-text">
+                                        <h3> SEARCH YOUR COURSE </h3>
+                                        <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
+                                        </div></div>
+                            <div class="work-blok-third-angle-figure"></div>
+                        </div>
+                        <div class="work-blok-third-circle"></div>
+                        <div class="work-blok-third-step"> Step 3 </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picture">
+                <div class="picture-text"> Welcome to UniLearn </div>
+                <div class="picture-button"> Learn More </div>
+            </div>
             <div class="training">
                 <div class="magistr">
                     <img src="img/magistr.png" width="370" height="280">
@@ -193,7 +242,7 @@
                         <div class="weoffer-menu-black">EMPLOYMENT</div>
                 </div>
             </div></div>
-            <div class="zelle-conteiner">
+            <div class="zelle-three-color">
                 <div class="zelle-conteiner-color-red"></div>
                 <div class="zelle-conteiner-color-yellow"></div>
                 <div class="zelle-conteiner-color-green"></div>
@@ -203,7 +252,7 @@
 
                 <div class="us-back">                    
                         <div class="us-back-tabs">
-                            <div class="us-back-tabs-one" style="border-top-color:#35b794">Choose Us</div>
+                            <div class="us-back-tabs-one">Choose Us</div>
                             <div class="us-back-tabs-one">Our History</div>
                             <div class="us-back-tabs-one">Achievements</div>                    
                         </div>
@@ -215,7 +264,7 @@
                                 </div>
                                 <div class="us-back-text-content-tabs">
                                                     <ul class="menu">
-                                                            <li id="blockmenu">
+                                                            <li class="blockmenu">
                                                                 <input type="checkbox"id="check1" />   
                                                                 <label for="check1">&#43;
                                                                 <span> Donec </span></label>
@@ -224,7 +273,7 @@
                                                             </ul>
                                                             </li>
 
-                                                        <li id="blockmenu">
+                                                        <li class="blockmenu">
                                                                 <input type="checkbox" id="check2" />   
                                                                 <label for="check2">&#43; 
                                                                 <span> Lorem </span>
@@ -234,7 +283,7 @@
                                                             </ul>
                                                             </li>
 
-                                                        <li id="blockmenu">
+                                                        <li class="blockmenu">
                                                                 <input type="checkbox" id="check3" />   
                                                                 <label for="check3">&#43; 
                                                                 <span> Aenean </span>
@@ -244,7 +293,7 @@
                                                             </ul>
                                                             </li>
 
-                                                        <li id="blockmenu">
+                                                        <li class="blockmenu">
                                                                 <input type="checkbox" id="check4" />   
                                                                 <label for="check4">&#43; 
                                                                 <span> Moreno </span>
@@ -266,7 +315,21 @@
                         </div>   
                      </div>                    
 
-            <div class="email"></div>
+            <div class="email">
+                <div class="email-text"> Get In Touch With Us</div>
+                <div class="zelle-three-color-white">
+                    <div class="zelle-conteiner-color-red"></div>
+                    <div class="zelle-conteiner-color-white"></div>
+                    <div class="zelle-conteiner-color-green"></div>
+                </div>
+                <div class="email-detail"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                <div class="email-search">
+                    <form class="email-search">
+                        <input type="email" name="Enter your email" placeholder="Enter your email">
+                    </form>
+                    <button type="submit" value="Subscribe" form="email-search">Subscribe</button>
+                </div>
+            </div>
             
             <div class="teacher">
                 <div class="teacher-text">Our Teachers</div>
@@ -274,9 +337,9 @@
 
                     <div class="teacher-face-blok">
                         <div class="teacher-face-blok-foto">
-                            <img src="img/teacher.png" width="163" height="171">
+                            <!--<img src="img/teacher.png" width="163" height="171">-->
                         </div>
-                        <div class="teacher-face-blok-description" style="background-color: #ff8e7a">
+                        <div class="teacher-face-blok-description">
                             <div class="teacher-face-blok-description-name">
                                 <div class="description-name">Jenny Doe</div>
                                 <div class="description-professor">Professor of Matematic</div>
@@ -292,9 +355,9 @@
                     </div>
                     <div class="teacher-face-blok">
                         <div class="teacher-face-blok-foto">
-                            <img src="img/teacher.png" width="163" height="171">
+                            <!--<img src="img/teacher.png" width="163" height="171">-->
                         </div>
-                        <div class="teacher-face-blok-description" style="background-color: #ffcf8c">
+                        <div class="teacher-face-blok-description">
                             <div class="teacher-face-blok-description-name">
                                 <div class="description-name">John Doe</div>
                                 <div class="description-professor">Lecturer of Desing</div>
@@ -310,9 +373,9 @@
                     </div>
                     <div class="teacher-face-blok">
                         <div class="teacher-face-blok-foto">
-                            <img src="img/teacher.png" width="163" height="171">
+                            <!--<img src="img/teacher.png" width="163" height="171">-->
                         </div>
-                        <div class="teacher-face-blok-description" style="background-color: #35b794">
+                        <div class="teacher-face-blok-description">
                             <div class="teacher-face-blok-description-name">
                                 <div class="description-name">James Doe</div>
                                 <div class="description-professor">Professor of Economics</div>
@@ -328,9 +391,9 @@
                     </div>
                     <div class="teacher-face-blok">
                         <div class="teacher-face-blok-foto">
-                            <img src="img/teacher.png" width="163" height="171">
+                            <!--<img src="img/teacher.png" width="163" height="171">-->
                         </div>
-                        <div class="teacher-face-blok-description" style="background-color: #4d4f55">
+                        <div class="teacher-face-blok-description">
                             <div class="teacher-face-blok-description-name">
                                 <div class="description-name">Jenny Doe</div>
                                 <div class="description-professor">Professor of Matematic</div>
@@ -347,7 +410,7 @@
 
                 </div></div>
                 
-            <div class="zelle-conteiner">
+            <div class="zelle-three-color">
                 <div class="zelle-conteiner-color-red"></div>
                 <div class="zelle-conteiner-color-yellow"></div>
                 <div class="zelle-conteiner-color-green"></div>
@@ -355,7 +418,7 @@
             <div class="video"></div>
             <div class="twitter"></div>
             <div class="community"></div>
-            <div class="zelle-conteiner">
+            <div class="zelle-three-color">
                 <div class="zelle-conteiner-color-red"></div>
                 <div class="zelle-conteiner-color-yellow"></div>
                 <div class="zelle-conteiner-color-green"></div>
@@ -365,5 +428,7 @@
             <div class="last"></div>
 
         </div>
+
+        <script src="style.js"></script>
     </body>
 </html>

@@ -1,17 +1,54 @@
 .latest-course-item:hover .latest-course-item-image {
-  background-color: rebeccapurple;
+  opacity: 0.4;
+  background-color: orange;
+}
+.latest-course-item:hover .button-second {
+  display: block;
 }
 .button-second {
   display: none;
   position: absolute;
+  cursor: pointer;
   height: 30px;
   width: 103px;
-  border: 1px solid red;
-  color: red;
+  border: 1px solid white;
+  color: white;
   border-radius: 3px;
   font-size: 15px;
   text-align: center;
   line-height: 30px;
   margin-left: 90px;
   margin-top: 100px;
+}
+.icons-conteiner-icon-badge:hover {
+  background-color: #35b767;
+}
+.icons-conteiner-icon-badge:hover i {
+  color: white;
+}
+.teacher-face-blok:hover {
+  border: 1px solid orange;
+}
+.teacher-face-blok:hover .teacher-face-blok-foto {
+  background-color: orange;
+}
+.teacher-face-blok:hover .teacher-face-blok-description {
+  background-color: white;
+  color: black;
+}
+.teacher-face-blok:hover i {
+  color: orange;
+}
+.teacher-face-blok:hover .teacher-face-blok-description-zelle {
+  background-color: orange;
+}
+.icons-conteiner-description-button:hover,
+.us-back-text-content-button:hover {
+  background-color: #35b767;
+  color: white;
+}
+.us-back-foto-button-rigth:hover,
+.us-back-foto-button-left:hover {
+  background-color: brown;
+  color: white;
 }
