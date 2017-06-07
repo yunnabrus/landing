@@ -251,6 +251,18 @@ img {
   text-align: center;
   padding: 15px 10px;
 }
+.red {
+  background-color: #ff7a63;
+}
+.yellow {
+  background-color: #ffcf8c;
+}
+.green {
+  background-color: #2aba80;
+}
+.grey {
+  background-color: #4f4f4f;
+}
 .icons-conteiner {
   display: flex;
   width: 920px;
@@ -845,7 +857,6 @@ img {
   height: 173px;
   width: 427px;
   margin-bottom: 30px;
-  background-color: #ff7a63;
   color: #EEE;
   border-radius: 3px;
   cursor: pointer;
@@ -1078,11 +1089,19 @@ img {
   font-size: 50px;
   line-height: 2.4;
   border: 9px solid #ffcf8c;
+  margin-bottom: 34px;
+}
+.community .community-blok .community-blok-second .community-blok-second-small-line {
+  width: calc(56%);
+  height: 1px;
+  background-color: #ffcf8c;
+  top: 1px;
+  position: relative;
 }
 .community .community-blok .community-blok-second .community-blok-second-text {
-  margin-top: 30px;
-  color: white;
-  background-color: #ffcf8c;
+  /*margin-top: 30px;
+                        color: white;
+                        background-color: @light-yellow;*/
 }
 .community .community-blok .community-blok-third {
   height: 100%;

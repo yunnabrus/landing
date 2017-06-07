@@ -293,6 +293,19 @@ img {
     }    
 }
 
+.red {
+    background-color: @light-red;
+}
+.yellow {
+    background-color: @light-yellow;
+}
+.green {
+    background-color: @light-green;
+}
+.grey {
+    background-color: @dark-gray;
+}
+
 .icons-conteiner {
     display: flex;
     width: @content-width;
@@ -891,7 +904,6 @@ img {
                     height: 173px;
                     width: 427px;
                     margin-bottom: 30px;
-                    background-color: @light-red;
                     color: @text-color-bright;
                     border-radius: 3px;
                     cursor: pointer;
@@ -1125,11 +1137,19 @@ img {
                         font-size: 50px;
                         line-height: 2.4;
                         border: 9px solid @light-yellow;
+                        margin-bottom: 34px;
+                    }
+                    .community-blok-second-small-line {
+                        width: calc(56%);
+                        height: 1px;
+                        background-color: @light-yellow;
+                        top: 1px;
+                        position: relative;
                     }
                     .community-blok-second-text {
-                        margin-top: 30px;
+                        /*margin-top: 30px;
                         color: white;
-                        background-color: @light-yellow;
+                        background-color: @light-yellow;*/
                     }
             }
             .community-blok-third {

@@ -1,6 +1,20 @@
-.latest-course-item:hover .latest-course-item-image {
-  opacity: 0.4;
-  background-color: orange;
+.latest-course-item:hover .latest-red-image {
+  opacity: 0.7;
+  background-color: #ff7a63;
+}
+.latest-course-item:hover .button-second {
+  display: block;
+}
+.latest-course-item:hover .latest-yellow-image {
+  opacity: 0.7;
+  background-color: #ffcf8c;
+}
+.latest-course-item:hover .button-second {
+  display: block;
+}
+.latest-course-item:hover .latest-green-image {
+  opacity: 0.7;
+  background-color: #2aba80;
 }
 .latest-course-item:hover .button-second {
   display: block;
@@ -26,29 +40,96 @@
 .icons-conteiner-icon-badge:hover i {
   color: white;
 }
-.teacher-face-blok:hover {
-  border: 1px solid orange;
+.teacher-red:hover {
+  border: 1px solid #ff7a63;
 }
-.teacher-face-blok:hover .teacher-face-blok-foto {
-  background-color: orange;
+.teacher-red:hover .teacher-face-blok-foto {
+  background-color: #ff7a63;
 }
-.teacher-face-blok:hover .teacher-face-blok-description {
+.teacher-red:hover .teacher-face-blok-description {
   background-color: white;
   color: black;
 }
-.teacher-face-blok:hover i {
-  color: orange;
+.teacher-red:hover i {
+  color: #ff7a63;
 }
-.teacher-face-blok:hover .teacher-face-blok-description-zelle {
-  background-color: orange;
+.teacher-red:hover .teacher-face-blok-description-zelle {
+  background-color: #ff7a63;
+}
+.teacher-yellow:hover {
+  border: 1px solid #ffcf8c;
+}
+.teacher-yellow:hover .teacher-face-blok-foto {
+  background-color: #ffcf8c;
+}
+.teacher-yellow:hover .teacher-face-blok-description {
+  background-color: white;
+  color: black;
+}
+.teacher-yellow:hover i {
+  color: #ffcf8c;
+}
+.teacher-yellow:hover .teacher-face-blok-description-zelle {
+  background-color: #ffcf8c;
+}
+.teacher-green:hover {
+  border: 1px solid #2aba80;
+}
+.teacher-green:hover .teacher-face-blok-foto {
+  background-color: #2aba80;
+}
+.teacher-green:hover .teacher-face-blok-description {
+  background-color: white;
+  color: black;
+}
+.teacher-green:hover i {
+  color: #2aba80;
+}
+.teacher-green:hover .teacher-face-blok-description-zelle {
+  background-color: #2aba80;
+}
+.teacher-grey:hover {
+  border: 1px solid #4f4f4f;
+}
+.teacher-grey:hover .teacher-face-blok-foto {
+  background-color: #4f4f4f;
+}
+.teacher-grey:hover .teacher-face-blok-description {
+  background-color: white;
+  color: black;
+}
+.teacher-grey:hover i {
+  color: #4f4f4f;
+}
+.teacher-grey:hover .teacher-face-blok-description-zelle {
+  background-color: #4f4f4f;
 }
 .icons-conteiner-description-button:hover,
 .us-back-text-content-button:hover {
-  background-color: #2aba80;
+  background-color: #4f4f4f;
   color: white;
 }
 .us-back-foto-button-rigth:hover,
 .us-back-foto-button-left:hover {
   background-color: brown;
   color: white;
+}
+.video-blok:hover .video-blok-button {
+  background-color: #2aba80;
+  color: white;
+}
+.community-blok-fight:hover .community-blok-fight-text {
+  background-color: #ff7a63;
+  color: white;
+  margin-top: 30px;
+}
+.community-blok-third:hover .community-blok-third-text {
+  background-color: #2aba80;
+  color: white;
+  margin-top: 30px;
+}
+.community-blok-second:hover .community-blok-second-text {
+  background-color: #ffcf8c;
+  color: white;
+  margin-top: 30px;
 }
