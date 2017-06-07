@@ -6,9 +6,11 @@
 
 @light-gray: #999999;
 @light-silver: #BBB;
-@main-color1: #ff7d65;
 @text-color-bright: #EEE;
-@light-green: #35b767;
+@light-green: #2aba80;
+@light-yellow: #ffcf8c;
+@light-red: #ff7a63;
+@dark-gray: #4f4f4f;
 
 .height-and-line-height(@value) {
     height: @value;
@@ -27,21 +29,21 @@
     width: 100%;
     border-bottom: 1px solid @light-silver;
         .zelle-conteiner-color-red {
-            background-color: red;
+            background-color: @light-red;
             width: 36px;
             height: 1px;            
             position: relative;
             top: 1px;
         }
         .zelle-conteiner-color-yellow {
-            background-color: yellow;
+            background-color: @light-yellow;
             width: 36px;
             height: 1px;
             position: relative;
             top: 1px;
         }
         .zelle-conteiner-color-green {
-            background-color: green;
+            background-color: @light-green;
             width: 36px;
             height: 1px;
             position: relative;
@@ -54,7 +56,7 @@
     justify-content: center;
     width: 100%;
         .zelle-conteiner-color-red {
-            background-color: red;
+            background-color: @light-red;
             width: 36px;
             height: 1px;            
             position: relative;
@@ -68,7 +70,33 @@
             top: 1px;
         }
         .zelle-conteiner-color-green {
-            background-color: green;
+            background-color: @light-green;
+            width: 36px;
+            height: 1px;
+            position: relative;
+            top: 1px;
+        }}
+.zelle-three-color-yellow {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+        .zelle-conteiner-color-red {
+            background-color: @light-red;
+            width: 36px;
+            height: 1px;            
+            position: relative;
+            top: 1px;
+        }
+        .zelle-conteiner-color-yellow {
+            background-color: @light-yellow;
+            width: 36px;
+            height: 1px;
+            position: relative;
+            top: 1px;
+        }
+        .zelle-conteiner-color-white {
+            background-color: white;
             width: 36px;
             height: 1px;
             position: relative;
@@ -97,7 +125,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
-
     .logo {
         display: flex;
         align-items: center; 
@@ -123,6 +150,7 @@ img {
 
         .menu-item {
             padding: 0 10px;
+            cursor: pointer;
         }
     }
 }
@@ -131,13 +159,11 @@ img {
     width: 100%;
     height: 850px;
     margin-top: -70px;
-    /*background: url(img/back1.png);*/
+    background: url(img/back1.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    position: relative;
-
     .join-us-content {
         width: calc(~"50% - "@join-us-padding);
         padding-left: @join-us-padding;
@@ -146,7 +172,7 @@ img {
             background-color: @light-gray;
             font-size: 52px;
             text-align: center;
-            color: @main-color1;
+            color: @light-red;
             opacity: 0.4;
             .border-radius-common(@border-radius-big);
             .height-and-line-height(82px);
@@ -160,7 +186,7 @@ img {
         }
 
         .join-us-content-button {
-            background-color: @main-color1;
+            background-color: @light-red;
             color: @text-color-bright;
             .border-radius-common(@border-radius-small);
             .height-and-line-height(34px);
@@ -271,8 +297,8 @@ img {
     display: flex;
     width: @content-width;
     height: 322px;
-    margin-left: 295px;
-    margin-right: 295px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 3px;
             .icons-conteiner-icon {
                     display: inline-flex;
@@ -379,8 +405,8 @@ img {
 .work {
     height: 761px;
     width: @content-width;
-    margin-left: 295px;
-    margin-right: 295px;
+    margin-left: auto;
+    margin-right: auto;
     .work-text {
         text-align: center;
         margin-top: 56px;
@@ -415,20 +441,20 @@ img {
                         display: inline-flex;
                                 .work-blok-first-figure-fa {
                                     border-radius: 3px;
-                                    border: 1px solid #ff8e7a;
+                                    border: 1px solid @light-red;
                                     display: inline-flex;
                                     height: 100%;
                                     width: 288px;
                                         i {
                                             position: absolute;
                                             font-size: 100px;
-                                            color: #ff8e7a;
+                                            color: @light-red;
                                             margin-left: 3px;
                                             margin-top: 60px;
                                         }
                                         .work-blok-first-figure-text {
                                             position: relative;
-                                            background-color: #ff8e7a;
+                                            background-color: @light-red;
                                             width: 235px;
                                             margin-left: 54px;
                                             text-align: left;
@@ -446,8 +472,8 @@ img {
                                         }
                             .work-blok-first-angle-figure {
                                 border: 24px solid;	
-                                border-left: 24px solid #ff8e7a;
-                                margin: 56px 0px;
+                                border-left: 24px solid @light-red;
+                                margin: 56px -1px;
                             }}
                     
                     .work-blok-first-circle {
@@ -456,14 +482,14 @@ img {
                         margin-left: -110px;
                         margin-top: 63px;
                         border-radius: 50%;
-                        border: 3px solid #ff8e7a;
+                        border: 3px solid @light-red;
                     }
                     .work-blok-first-step {
                         height: 63px;
                         width: 125px;
                         margin-right: 157px;
                         margin-top: 48px;
-                        background-color: #ff8e7a;
+                        background-color: @light-red;
                         text-align: center;
                         line-height: 63px;
                         font-size: 26px;
@@ -484,18 +510,18 @@ img {
                         display: inline-flex;
                             .work-blok-second-angle-figure {
                                 border: 24px solid;	
-                                border-right: 24px solid #ffcf8c;
-                                margin: 56px 0px;
+                                border-right: 24px solid @light-yellow;
+                                margin: 56px -1px;
                             }
                             .work-blok-second-figure-fa {
                                     border-radius: 3px;
-                                    border: 1px solid #ffcf8c;
+                                    border: 1px solid @light-yellow;
                                     display: inline-flex;
                                     height: 100%;
                                     width: 288px;
                                         .work-blok-second-figure-text {
                                             position: relative;
-                                            background-color: #ffcf8c;
+                                            background-color: @light-yellow;
                                             width: 235px;
                                             margin-right: 54px;
                                             text-align: left;
@@ -512,7 +538,7 @@ img {
                                             i {
                                             position: absolute;
                                             font-size: 100px;
-                                            color: #ffcf8c;
+                                            color: @light-yellow;
                                             margin-left: 176px;
                                             margin-top: 60px;
                                         }
@@ -524,14 +550,14 @@ img {
                         margin-right: -134px;
                         margin-top: 63px;
                         border-radius: 50%;
-                        border: 3px solid #ffcf8c;
+                        border: 3px solid @light-yellow;
                     }
                     .work-blok-second-step {
                         height: 63px;
                         width: 125px;
                         margin-left: 157px;
                         margin-top: 48px;
-                        background-color: #ffcf8c;
+                        background-color: @light-yellow;
                         text-align: center;
                         line-height: 63px;
                         font-size: 26px;
@@ -551,20 +577,20 @@ img {
                         display: inline-flex;
                             .work-blok-third-figure-fa {
                                     border-radius: 3px;
-                                    border: 1px solid #35b767;
+                                    border: 1px solid #2aba80;
                                     display: inline-flex;
                                     height: 100%;
                                     width: 288px;
                                         i {
                                             position: absolute;
                                             font-size: 100px;
-                                            color: #35b767;
+                                            color: #2aba80;
                                             margin-left: 3px;
                                             margin-top: 53px;
                                         }
                                         .work-blok-third-figure-text {
                                             position: relative;
-                                            background-color: #35b767;
+                                            background-color: #2aba80;
                                             width: 235px;
                                             margin-left: 54px;
                                             text-align: left;
@@ -581,8 +607,8 @@ img {
                             }                                 
                             .work-blok-third-angle-figure {
                                 border: 24px solid;	
-                                border-left: 24px solid #35b767;
-                                margin: 56px 0px;
+                                border-left: 24px solid #2aba80;
+                                margin: 56px -1px;
                             }
                     }}
                     .work-blok-third-circle {
@@ -591,14 +617,14 @@ img {
                         margin-left: -110px;
                         margin-top: 63px;
                         border-radius: 50%;
-                        border: 3px solid #35b767;
+                        border: 3px solid #2aba80;
                     }
                     .work-blok-third-step {
                         height: 63px;
                         width: 125px;
                         margin-right: 157px;
                         margin-top: 48px;
-                        background-color: #35b767;
+                        background-color: #2aba80;
                         text-align: center;
                         line-height: 63px;
                         font-size: 26px;
@@ -639,59 +665,60 @@ img {
 .training {
     height: 302px;
     width: @content-width;
-    margin-left: 295px;
-    margin-right: 295px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 46px;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-        .magistr {
-            width: calc(@content-width/2);
-            padding-top: 29px;
-        }
-        .weoffer {
-            width: calc(@content-width/2);
-            font-family: 'Times New Roman', Times, serif;
-            display: flex;
-            flex-direction: column;
+        .training-flex {
+            display: inline-flex;
             justify-content: flex-start;
             align-items: flex-start;
-                .weoffer-text{
-                        h3 {
-                            font-size: 27px;
-                            padding-left: 10px;
-                            padding-top: 27px;
-                            margin-bottom: -8px;
-                        }
-                        h6 {
-                            font-size: 14px;
-                            line-height: 1.4;
-                            padding-left: 14px;
-                        }}
-                .weoffer-menu {    
-                    display: inline-flex;
-                    height: 45px;
-                    padding-left: 13px;
-                    padding-top: 24px;
-                    font-size: 12px;
-                        .weoffer-menu-black {
-                            padding-left: 25px;
-                        }
-                        .weoffer-menu-red {
-                            color: red;
-                                .weoffer-menu-redzelle {
-                                    border-bottom: 1px solid red;
-                                    padding-top: 6px;
+                .magistr {
+                    width: calc(@content-width/2);
+                    padding-top: 29px;
+                }
+                .weoffer {
+                    width: calc(@content-width/2);
+                    font-family: 'Times New Roman', Times, serif;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                        .weoffer-text{
+                                h3 {
+                                    font-size: 27px;
+                                    padding-left: 10px;
+                                    padding-top: 27px;
+                                    margin-bottom: -8px;
                                 }
-                }}
-        }
+                                h6 {
+                                    font-size: 14px;
+                                    line-height: 1.4;
+                                    padding-left: 14px;
+                                }}
+                        .weoffer-menu {    
+                            display: inline-flex;
+                            height: 45px;
+                            padding-left: 13px;
+                            padding-top: 24px;
+                            font-size: 12px;
+                                .weoffer-menu-black {
+                                    padding-left: 25px;
+                                }
+                                .weoffer-menu-red {
+                                    color: red;
+                                        .weoffer-menu-redzelle {
+                                            border-bottom: 1px solid red;
+                                            padding-top: 6px;
+                                        }
+                        }}
+        }}
 }
 
 .us-text {
     height: 55px;
     text-align: center;
     font-size: 29px;
-    margin: 50px 295px 0px 295px;
+    margin: 50px auto 0px auto;
     width: @content-width;
 }
 
@@ -700,7 +727,7 @@ img {
             flex-direction: column;
             width: @content-width;
             height: 408px;
-            margin: 0 295px;
+            margin: 0 auto;
                     .us-back-tabs {
                         display: inline-flex;
                         text-align: center;
@@ -834,7 +861,7 @@ img {
                 border-bottom-right-radius: 3px;
                 border-top-right-radius: 3px;
                 cursor: pointer;
-                background-color: #35b767;
+                background-color: #2aba80;
                 color: white;
             }
 }
@@ -844,8 +871,8 @@ img {
     width: @content-width;
     display: flex;
     flex-direction: column;
-    margin-left: 295px;
-    margin-right: 295px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
         .teacher-text {
                 text-align: center;
@@ -864,7 +891,7 @@ img {
                     height: 173px;
                     width: 427px;
                     margin-bottom: 30px;
-                    background-color: #ff8e7a;
+                    background-color: @light-red;
                     color: @text-color-bright;
                     border-radius: 3px;
                     cursor: pointer;
@@ -910,21 +937,251 @@ img {
 }}}
 
 .video {
-    height: 371px;
+    height: 373px;
     width: @content-width;
-}
+    margin: 0 auto;
+        .video-flex {
+            display: inline-flex;
+            height: 100%;
+                .video-clip {
+                    width: calc(@content-width/2);
+                    height: 100%;
+                        video {
+                            width: 420px;
+                            height: 235px;
+                            padding-top: 64px;
+                        }
+                }
+                .video-blok {
+                    width: calc(@content-width/2);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                        .video-blok-text {
+                            height: 250px;
+                            padding-left: 30px;
+                            margin-top: -5px;
+                                h3 {
+                                        font-size: 30px;
+                                        font-weight: 100;
+                                        letter-spacing: -1px;
+                                        margin-top: 52px;
+                                }
+                                p {
+                                    font-size: 13px;
+                                    margin-top: 2.1em;
+                                }
+                        }
+                        .video-blok-button {
+                            height: 31px;
+                            width: 112px;
+                            border: 1px solid @light-green;
+                            border-top-left-radius: 8px;
+                            border-bottom-right-radius: 8px;
+                            font-size: 15px;
+                            text-align: center;
+                            line-height: 32px;
+                            cursor: pointer;
+                            margin-left: 345px;
+                            margin-top: 34px;
+                        }
+                }
+}}
 
 .twitter {
     height: 298px;
     width: 100%;
     background-image: url('img/bandgreen.png');
     background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+        .twitter-icon {
+            height: 52px;
+            width: 52px;
+            margin-top: 64px;
+            margin-bottom: 21px;
+            border: 1px solid white;
+            color: white;
+            border-top-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+            font-size: 27px;
+            text-align: center;
+            line-height: 2;
+        }
+        .twitter-text {
+            margin-top: -6px;
+            h4 {
+                font-size: 15px;
+                color: white;
+            }
+            h6 {
+                margin-top: -5px;
+                font-size: 13px;
+                color: white;
+            }
+            h5 {
+                margin-top: -18px;
+                font-size: 13px;
+                color: @dark-gray;
+            }
+        }
+}
+.colortext {
+    color: @dark-gray;
 }
 
 .community {
-    height: 469px;
+    height: 419px;
     width: @content-width;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+        .community-text {
+            text-align: center;
+            font-size: 29px;
+            margin-top: 53px;
+        }
+        .community-blok {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 363px;
+            width: 100%; 
+            margin-top: 23px;       
+            .community-blok-fight {
+                height: 100%;
+                width: 287px;
+                padding-left: 2px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                border-radius: 2px;
+                    .community-blok-fight-big-line {
+                        width: 100%;
+                        height: 1px;
+                        background-color: @light-red;
+                        top: 1px;
+                        position: relative;
+                    }
+                    .community-blok-fight-caption {
+                        margin-top: 32px;
+                        font-size: 14px;
+                        font-weight: 800;
+                        color: @light-red;
+                    }
+                    .community-blok-fight-circle {
+                        height: 125px;
+                        width: 125px;
+                        border-radius: 50%;
+                        margin-top: 28px;
+                        margin-left: 4px;
+                        background-color: @light-red;
+                        text-align: center;
+                        color: white;
+                        font-size: 52px;
+                        line-height: 2.5;
+                        margin-bottom: 34px;
+                    }
+                    .community-blok-fight-small-line {
+                        width: calc(56%);
+                        height: 1px;
+                        background-color: @light-red;
+                        top: 1px;
+                        position: relative;
+                    }
+                }
+            .community-blok-second {
+                height: 100%;
+                width: 287px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                border-radius: 2px;
+                    .community-blok-second-big-line {
+                        width: 100%;
+                        height: 1px;
+                        background-color: @light-yellow;
+                        top: 1px;
+                        position: relative;
+                    }
+                    .community-blok-second-caption {
+                        margin-top: 32px;
+                        font-size: 14px;
+                        font-weight: 800;
+                        color: @light-yellow;
+                    }
+                    .community-blok-second-circle {
+                        height: 111px;
+                        width: 111px;
+                        margin-top: 29px;
+                        border-radius: 50%;
+                        text-align: center;
+                        color: @light-yellow;
+                        font-size: 50px;
+                        line-height: 2.4;
+                        border: 9px solid @light-yellow;
+                    }
+                    .community-blok-second-text {
+                        margin-top: 30px;
+                        color: white;
+                        background-color: @light-yellow;
+                    }
+            }
+            .community-blok-third {
+                height: 100%;
+                width: 287px;
+                padding-right: 2px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                border-radius: 2px;
+                .community-blok-third-big-line {
+                        width: 100%;
+                        height: 1px;
+                        background-color: @light-green;
+                        top: 1px;
+                        position: relative;
+                    }
+                .community-blok-third-caption {
+                        margin-top: 32px;
+                        font-size: 14px;
+                        font-weight: 800;
+                        color: @light-green;
+                    }
+                .community-blok-third-circle {
+                        height: 125px;
+                        width: 125px;
+                        border-radius: 50%;
+                        margin-top: 28px;
+                        margin-left: 4px;
+                        background-color: @light-green;
+                        text-align: center;
+                        color: white;
+                        font-size: 52px;
+                        line-height: 2.5;
+                        margin-bottom: 34px;
+                    }
+                .community-blok-third-small-line {
+                        width: calc(56%);
+                        height: 1px;
+                        background-color: @light-green;
+                        top: 1px;
+                        position: relative;
+                    }
+            }
+        }
+h6 {
+    font-size: 15px;
+    margin: 30px;
+    line-height: 1.3;
+    font-weight: 100;
+}
 }
 
 .test {

@@ -35,7 +35,7 @@ ul li input:checked ~ .content {
   max-height: 60px;
 }
 li:hover label {
-  background-color: #35b767;
+  background-color: #2aba80;
   color: white;
 }
 ul ul {
