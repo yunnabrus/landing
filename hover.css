@@ -1,23 +1,44 @@
-.latest-course-item:hover .latest-red-image {
+.latest-course-item-image:hover .latest-red-image {
+  display: block;
+}
+.latest-course-item-image:hover .button-second {
+  display: block;
+}
+.latest-course-item-image:hover .latest-yellow-image {
+  display: block;
+}
+.latest-course-item-image:hover .button-second {
+  display: block;
+}
+.latest-course-item-image:hover .latest-green-image {
+  display: block;
+}
+.latest-course-item-image:hover .button-second {
+  display: block;
+}
+.latest-red-image {
   opacity: 0.7;
   background-color: #ff7a63;
+  display: none;
+  position: absolute;
+  height: 220px;
+  width: 292px;
 }
-.latest-course-item:hover .button-second {
-  display: block;
-}
-.latest-course-item:hover .latest-yellow-image {
+.latest-yellow-image {
   opacity: 0.7;
   background-color: #ffcf8c;
+  display: none;
+  position: absolute;
+  height: 220px;
+  width: 292px;
 }
-.latest-course-item:hover .button-second {
-  display: block;
-}
-.latest-course-item:hover .latest-green-image {
+.latest-green-image {
   opacity: 0.7;
   background-color: #2aba80;
-}
-.latest-course-item:hover .button-second {
-  display: block;
+  display: none;
+  position: absolute;
+  height: 220px;
+  width: 292px;
 }
 .button-second {
   display: none;
@@ -40,15 +61,14 @@
 .icons-conteiner-icon-badge:hover i {
   color: white;
 }
-.teacher-red:hover {
-  border: 1px solid #ff7a63;
-}
 .teacher-red:hover .teacher-face-blok-foto {
   background-color: #ff7a63;
+  opacity: 0.4;
 }
 .teacher-red:hover .teacher-face-blok-description {
   background-color: white;
   color: black;
+  border: 1px solid #ff7a63;
 }
 .teacher-red:hover i {
   color: #ff7a63;
@@ -56,15 +76,14 @@
 .teacher-red:hover .teacher-face-blok-description-zelle {
   background-color: #ff7a63;
 }
-.teacher-yellow:hover {
-  border: 1px solid #ffcf8c;
-}
 .teacher-yellow:hover .teacher-face-blok-foto {
   background-color: #ffcf8c;
+  opacity: 0.4;
 }
 .teacher-yellow:hover .teacher-face-blok-description {
   background-color: white;
   color: black;
+  border: 1px solid #ffcf8c;
 }
 .teacher-yellow:hover i {
   color: #ffcf8c;
@@ -72,15 +91,14 @@
 .teacher-yellow:hover .teacher-face-blok-description-zelle {
   background-color: #ffcf8c;
 }
-.teacher-green:hover {
-  border: 1px solid #2aba80;
-}
 .teacher-green:hover .teacher-face-blok-foto {
   background-color: #2aba80;
+  opacity: 0.4;
 }
 .teacher-green:hover .teacher-face-blok-description {
   background-color: white;
   color: black;
+  border: 1px solid #2aba80;
 }
 .teacher-green:hover i {
   color: #2aba80;
@@ -88,15 +106,14 @@
 .teacher-green:hover .teacher-face-blok-description-zelle {
   background-color: #2aba80;
 }
-.teacher-grey:hover {
-  border: 1px solid #4f4f4f;
-}
 .teacher-grey:hover .teacher-face-blok-foto {
   background-color: #4f4f4f;
+  opacity: 0.4;
 }
 .teacher-grey:hover .teacher-face-blok-description {
   background-color: white;
   color: black;
+  border: 1px solid #4f4f4f;
 }
 .teacher-grey:hover i {
   color: #4f4f4f;
@@ -106,7 +123,7 @@
 }
 .us-back-foto-button-rigth:hover,
 .us-back-foto-button-left:hover {
-  background-color: brown;
+  background-color: silver;
   color: white;
 }
 .video-blok:hover .video-blok-button {
@@ -121,18 +138,53 @@
   background-color: #2aba80;
   color: white;
 }
+.community-blok-fight:hover .community-blok-fight-circle {
+  background-color: white;
+  color: #ff7a63;
+}
 .community-blok-fight:hover .community-blok-fight-text {
   background-color: #ff7a63;
   color: white;
-  margin-top: 30px;
+}
+.community-blok-third:hover .community-blok-third-circle {
+  background-color: white;
+  color: #2aba80;
 }
 .community-blok-third:hover .community-blok-third-text {
   background-color: #2aba80;
   color: white;
-  margin-top: 30px;
+}
+.community-blok-second:hover .community-blok-second-circle {
+  background-color: white;
+  color: #ffcf8c;
 }
 .community-blok-second:hover .community-blok-second-text {
   background-color: #ffcf8c;
   color: white;
-  margin-top: 30px;
+}
+.last-icon-badge:hover {
+  background-color: #ff7a63;
+}
+.last-three-review:hover .button {
+  background-color: #2aba80;
+  color: white;
+}
+.menu:hover .menu-item {
+  color: #ff7a63;
+}
+.menu-item-no-line:hover {
+  color: #ff7a63;
+}
+.lower-menu:hover {
+  color: #ff7a63;
+}
+.lower-menu-no-line:hover {
+  color: #ff7a63;
+}
+.panel:hover .panel-heading {
+  color: white;
+  background-color: #2aba80;
+}
+.panel:hover .panel-heading a {
+  text-decoration: none;
 }

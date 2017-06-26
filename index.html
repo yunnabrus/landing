@@ -3,45 +3,93 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Lesson 5</title>
-        <link rel="stylesheet" href="main.css" />
         <link rel="stylesheet" href="content/font-awesome.min.css">
         <link rel="stylesheet" href="hover.css" />
         <link rel="stylesheet" href="tabs.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+                            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+                            crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css" />
 	</head>
     <body>
-        <!--<image class="temp-back" src="landing.png" >-->
-        <div class="nav">
-            <div class="logo">
-                <div class="logo-image"></div>
-                <span class="logo-text">uniLearn</span>
-            </div>
-            <div class="menu">
-                <div class="menu-item">Home</div>
-                <div class="menu-item">Features</div>
-                <div class="menu-item">Courses</div>
-                <div class="menu-item">Events</div>
-                <div class="menu-item">Shop</div>
-                <div class="menu-item">Contact Us</div>
-            </div>
+       <!--<image class="temp-back" src="landing.png" >-->
+
+    <div class="root">
+        <div class="nav-size">
+            <div class="nav">
+                <div class="logo">
+                    <div class="logo-image"></div>
+                    <span class="logo-text">uniLearn</span>
+                </div>
+                <div class="menu">
+                    <div class="menu-item">Home</div>
+                    <div class="menu-item">Features</div>
+                    <div class="menu-item">Courses</div>
+                    <div class="menu-item">Events</div>
+                    <div class="menu-item">Shop</div>
+                    <div class="menu-item-no-line">Contact Us</div>
+                </div>
+            </div>     
+        </div>   
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">                
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>            
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/back3.png" width="100%">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="img/back2.png" width="100%">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="img/back1.png" width="100%">
+                    <div class="carousel-caption"></div>
+                </div>
+            </div>            
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
         <div class="join-us-container">
             <div class="join-us-content">
                 <div class="join-us-content-first-block">Get Everything Right</div>
                 <div class="join-us-content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. Esse ipsam iste, voluptatum earum nobis vel a unde tempora suscipit. Unde earum magnam sapiente, omnis quisquam officia eveniet.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. 
                 </div>
                 <div class="join-us-content-button">Join Us ></div>
-                <div class="join-us-content-nav join-us-content-nav-left" onclick="leftAlert()"><</div>
-                <div class="join-us-content-nav join-us-content-nav-right" onclick="rightAlert()">></div>
+                <div class="join-us-content-nav join-us-content-nav-left"> < </div>
+                <div class="join-us-content-nav join-us-content-nav-right"> > </div>
             </div>
         </div>
+    </div>
+
+        <div class="zelle-three-color">
+            <div class="zelle-conteiner-color-red"></div>
+            <div class="zelle-conteiner-color-yellow"></div>
+            <div class="zelle-conteiner-color-green"></div>
+        </div>
+
         <div class="latest-courses">
             <div class="latest-courses-label">Latest Courses</div>
             <div class="latest-courses-container">
                 <div class="latest-course-item">
-                    <div class="latest-course-item-image latest-red-image">
-                        <!--<img src="img/teacher.png" width="290px" height="220px">-->
-                        <div class="button-second"> Learn More </div>
+                    <div class="latest-course-item-image">     
+                        <img src="img/teacher.png">                  
+                        <div class="latest-red-image">
+                            <div class="button-second"> Learn More </div>
+                        </div>                        
                     </div>
                     <div class="latest-course-item-title">
                         <div>Science In The New Era</div>
@@ -57,7 +105,7 @@
                                 <i class="fa fa-clock-o" aria-hidden="true"></i>
                                 <span>At 3:00 pm</span>
                             </div>
-                        </div>
+                    </div>
                         <div class="course-item-descr-second-block"></div>                        
                         <div class="course-item-descr-third-block">
                             asdasda asdasdasd asdasda asdasd asdsasdad asdasd asdads
@@ -65,9 +113,11 @@
                     </div>
                 </div>
                 <div class="latest-course-item">
-                    <div class="latest-course-item-image latest-yellow-image">
-                        <!--<img src="img/teacher.png" width="290px" height="220px">-->
-                        <div class="button-second"> Learn More </div>
+                    <div class="latest-course-item-image">
+                        <img src="img/teacher.png">
+                        <div class="latest-yellow-image">
+                            <div class="button-second"> Learn More </div>
+                        </div>
                     </div>
                     <div class="latest-course-item-title">
                         <div>Campus Party</div>
@@ -91,9 +141,11 @@
                     </div>
                 </div>
                 <div class="latest-course-item">
-                    <div class="latest-course-item-image latest-green-image">
-                        <!--<img src="img/teacher.png" width="290px" height="220px">-->
-                        <div class="button-second"> Learn More </div>
+                    <div class="latest-course-item-image">
+                        <img src="img/teacher.png">
+                        <div class="latest-green-image">
+                            <div class="button-second"> Learn More </div>
+                        </div>
                     </div>
                     <div class="latest-course-item-title">
                         <div>Desing Practice</div>
@@ -114,14 +166,17 @@
                         <div class="course-item-descr-third-block">
                             asdasda asdasdasd asdasda asdasd asdsasdad asdasd asdads
                         </div>
+                </div>
             </div>
         </div>
-    </div></div>
+        </div>
+
         <div class="zelle-three-color">
                 <div class="zelle-conteiner-color-red"></div>
                 <div class="zelle-conteiner-color-yellow"></div>
                 <div class="zelle-conteiner-color-green"></div>
         </div>
+
         <div class="icons-conteiner">
             <div class="icons-conteiner-icon">
                 <div class="icons-conteiner-icon-badge">
@@ -155,38 +210,41 @@
                     <h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. Esse ipsam iste, voluptatum earum nobis vel a unde tempora suscipit. Unde earum magnam sapiente, omnis quisquam officia eveniet.</h6>
                 </div>
                 <div class="icons-conteiner-description-button"> Learn More > </div>
-                </div>
-        </div>
-        <div class="statistics-conteiner">
-                    <div class="statistics-conteiner-effect">
-                        <div class="simbol"> <i class="fa fa-file" aria-hidden="true"></i> </div>
-                        <div class="number"> 356 </div> <div class="text"> Courses </div>
-                    </div>
-                    <div class="statistics-conteiner-effect">
-                        <div class="simbol"> <i class="fa fa-users" aria-hidden="true"></i> </div>
-                        <div class="number"> 4781 </div> <div class="text"> Students </div>
-                    </div>
-                    <div class="statistics-conteiner-effect">
-                        <div class="simbol"> <i class="fa fa-pencil" aria-hidden="true"></i> </div>
-                        <div class="number"> 41 </div> <div class="text"> Lections </div>
-                    </div>
-                    <div class="statistics-conteiner-effect">
-                        <div class="simbol"> <i class="fa fa-calendar" aria-hidden="true"></i> </div>
-                        <div class="number"> 120 </div> <div class="text"> Events </div>
-                    </div>
             </div>
-            <div class="work">
-                <div class="work-text">How We Work</div>
+        </div>
+
+        <div class="statistics-conteiner">
+            <div class="statistics-conteiner-effect">
+                <div class="simbol"> <i class="fa fa-file" aria-hidden="true"></i> </div>
+                <div class="number"> 356 </div> <div class="text"> Courses </div>
+            </div>
+            <div class="statistics-conteiner-effect">
+                <div class="simbol"> <i class="fa fa-users" aria-hidden="true"></i> </div>
+                <div class="number"> 4781 </div> <div class="text"> Students </div>
+            </div>
+            <div class="statistics-conteiner-effect">
+                <div class="simbol"> <i class="fa fa-pencil" aria-hidden="true"></i> </div>
+                <div class="number"> 41 </div> <div class="text"> Lections </div>
+            </div>
+            <div class="statistics-conteiner-effect">
+                <div class="simbol"> <i class="fa fa-calendar" aria-hidden="true"></i> </div>
+                <div class="number"> 120 </div> <div class="text"> Events </div>
+            </div>
+        </div>
+
+        <div class="work">
+            <div class="work-text">How We Work</div>
                 <div class="work-blok">
                     <div class="work-blok-vertical"></div>
                     <div class="work-blok-first">
                         <div class="work-blok-first-figure">
                             <div class="work-blok-first-figure-fa">
-                                    <i class="fa fa-genderless" aria-hidden="true"></i>
-                                    <div class="work-blok-first-figure-text">
-                                        <h3> SEARCH YOUR COURSE </h3>
-                                        <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
-                                        </div></div>
+                                <i class="fa fa-genderless" aria-hidden="true"></i>
+                                <div class="work-blok-first-figure-text">
+                                    <h3> SEARCH YOUR COURSE </h3>
+                                    <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
+                                </div>
+                            </div>
                             <div class="work-blok-first-angle-figure"></div>
                         </div>
                         <div class="work-blok-first-circle"></div>
@@ -204,223 +262,313 @@
                                 </div>
                                 <i class="fa fa-television" aria-hidden="true"></i>
                             </div>                            
-                            </div>
+                        </div>
                     </div>
                     <div class="work-blok-third">
                         <div class="work-blok-third-figure">
                             <div class="work-blok-third-figure-fa">
-                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                                    <div class="work-blok-third-figure-text">
-                                        <h3> SEARCH YOUR COURSE </h3>
-                                        <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
-                                        </div></div>
-                            <div class="work-blok-third-angle-figure"></div>
-                        </div>
-                        <div class="work-blok-third-circle"></div>
-                        <div class="work-blok-third-step"> Step 3 </div>
+                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                <div class="work-blok-third-figure-text">
+                                    <h3> SEARCH YOUR COURSE </h3>
+                                    <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
+                                </div>
+                            </div>
+                        <div class="work-blok-third-angle-figure"></div>
                     </div>
+                    <div class="work-blok-third-circle"></div>
+                    <div class="work-blok-third-step"> Step 3 </div>
                 </div>
             </div>
+        </div>
 
-            <div class="picture">
-                <div class="picture-text"> Welcome to UniLearn </div>
-                <div class="picture-button"> Learn More </div>
-            </div>
-            <div class="training">
-                <div class="training-flex">
+        <div class="picture">
+            <div class="picture-text"> Welcome to UniLearn </div>
+            <div class="picture-button"> Learn More </div>
+        </div>
+
+        <div class="training">
+            <div class="training-flex">
                 <div class="magistr">
                     <img src="img/magistr.png" width="370" height="280">
                 </div>
-                <div class="weoffer">
-                        <div class="weoffer-text">
-                        <h3> We Offer </h3>
-                        <h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. Esse ipsam iste, voluptatum earum nobis vel a unde tempora suscipit. Unde earum magnam sapiente, omnis quisquam officia eveniet.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Maxime, praesentium, aliquam. </h6></div>
-                    <div class="weoffer-menu">
-                        <div class="weoffer-menu-red">
-                            <div class="weoffer-menu-redtext">EDUCATION</div>
-                            <div class="weoffer-menu-redzelle"></div></div>
-                        <div class="weoffer-menu-black">KNOWELEDGE</div>
-                        <div class="weoffer-menu-black">EMPLOYMENT</div>
-                </div>
-            </div></div></div>
-            <div class="zelle-three-color">
-                <div class="zelle-conteiner-color-red"></div>
-                <div class="zelle-conteiner-color-yellow"></div>
-                <div class="zelle-conteiner-color-green"></div>
-            </div>
-            
-            <div class="us-text">About Us</div>
-
-                <div class="us-back">                    
-                        <div class="us-back-tabs">
-                            <div class="us-back-tabs-one">Choose Us</div>
-                            <div class="us-back-tabs-one">Our History</div>
-                            <div class="us-back-tabs-one">Achievements</div>                    
+                <div id="weTab" class="we-tab">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <div class="weoffer">
+                                <div class="weoffer-text">
+                                    <h3> We Offer I </h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. Esse ipsam iste, voluptatum earum nobis vel a unde tempora suscipit. </p>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="us-back-text-conteiner">  
-                            <div class="us-back-text-content">
-                                <div class="us-back-text">                        
-                                    <h4> Why We Are Better </h4>
-                                    <h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. Esse ipsam iste, voluptatum earum nobis vel a unde tempora suscipit. </h6>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <div class="weoffer">
+                                <div class="weoffer-text">
+                                    <h3> We Offer II </h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. Esse ipsam iste, voluptatum earum nobis vel a unde tempora suscipit. </p>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </p>
                                 </div>
-                                <div class="us-back-text-content-tabs">
-                                                    <ul class="menu">
-                                                            <li class="blockmenu">
-                                                                <input type="checkbox"id="check1" />   
-                                                                <label for="check1">&#43;
-                                                                <span> Donec </span></label>
-                                                            <ul class="content">
-                                                                <li><a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </a></li>
-                                                            </ul>
-                                                            </li>
-
-                                                        <li class="blockmenu">
-                                                                <input type="checkbox" id="check2" />   
-                                                                <label for="check2">&#43; 
-                                                                <span> Lorem </span>
-                                                            </label>
-                                                            <ul class="content">
-                                                                <li><a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </a></li>
-                                                            </ul>
-                                                            </li>
-
-                                                        <li class="blockmenu">
-                                                                <input type="checkbox" id="check3" />   
-                                                                <label for="check3">&#43; 
-                                                                <span> Aenean </span>
-                                                            </label>
-                                                            <ul class="content">
-                                                                <li><a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </a></li>
-                                                            </ul>
-                                                            </li>
-
-                                                        <li class="blockmenu">
-                                                                <input type="checkbox" id="check4" />   
-                                                                <label for="check4">&#43; 
-                                                                <span> Moreno </span>
-                                                            </label>
-                                                            <ul class="content">
-                                                                <li><a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </a></li>
-                                                            </ul>
-                                                            </li>
-                                                        </ul>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <div class="weoffer">
+                                <div class="weoffer-text">
+                                    <h3> We Offer III </h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. Esse ipsam iste, voluptatum earum nobis vel a unde tempora suscipit. </p>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </p>
                                 </div>
-                                <div class="us-back-text-content-button">Viem Deteil ></div>
-                                </div>                                
-                                <div class="us-back-foto"> 
-                                    <div class="us-back-foto-button">                     
-                                            <div class="us-back-foto-button-left"><</div>
-                                            <div class="us-back-foto-button-rigth">></div>                        
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="EDUCATION" role="tab" data-toggle="tab">EDUCATION</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="KNOWELEDGE" role="tab" data-toggle="tab">KNOWELEDGE</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="EMPLOYMENT" role="tab" data-toggle="tab">EMPLOYMENT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="zelle-three-color">
+            <div class="zelle-conteiner-color-red"></div>
+            <div class="zelle-conteiner-color-yellow"></div>
+            <div class="zelle-conteiner-color-green"></div>
+        </div>
+            
+        <div class="us-text">About Us</div>
+
+        <div class="us-back">
+            <div id="usTabs" class="us-back-tabs">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Choose Us</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Our History</a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Achievements</a></li>
+                </ul>
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="tab-container">
+                        <div class="tab-content">
+                            <div class="us-back-text">                        
+                                <h4> Why We Are Better </h4>
+                                <h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. Esse ipsam iste, voluptatum earum nobis vel a unde tempora suscipit. </h6>
+                            </div>
+
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Anim pariatur cliche reprehenderit I
+                                        </a>
+                                    </h4>
                                     </div>
-                            </div>    
-                        </div>   
-                     </div>                    
-
-            <div class="email">
-                <div class="email-text"> Get In Touch With Us</div>
-                <div class="zelle-three-color-white">
-                    <div class="zelle-conteiner-color-red"></div>
-                    <div class="zelle-conteiner-color-white"></div>
-                    <div class="zelle-conteiner-color-green"></div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Anim pariatur cliche reprehenderit II
+                                        </a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Anim pariatur cliche reprehenderit III
+                                        </a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Anim pariatur cliche reprehenderit IV
+                                        </a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            <div class="us-back-text-content-button">Viem Deteil ></div>   
+                        </div>
+                    <div class="us-back-foto">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/man.png" alt="photoMan">
+                                </div>
+                                <div class="item">
+                                    <img src="img/man2.png" alt="photoMan2">
+                                </div>
+                                <div class="item">
+                                    <img src="img/man3.png" alt="photoMan3">
+                                </div>
+                            </div>
+                            <div class="us-back-foto-button">
+                                <div class="us-back-foto-button-left"> < </div>
+                                <div class="us-back-foto-button-rigth"> > </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            </div>
+                        </div>                        
+                    </div>
                 </div>
-                <div class="email-detail"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-                <div class="email-search">
-                    <form class="email-search">
-                        <input type="email" name="Enter your email" placeholder="Enter your email">
-                    </form>
-                    <button type="submit" value="Subscribe" form="email-search">Subscribe</button>
+                    <div role="tabpanel" class="tab-pane" id="profile"></div>
+                    <div role="tabpanel" class="tab-pane" id="messages"></div>
+            </div>
+        </div>
+
+        <div class="email">
+            <div class="email-size">
+                <div class="email-size-container">
+                    <div class="email-text"> Get In Touch With Us</div>
+                    <div class="zelle-three-color-white">
+                        <div class="zelle-conteiner-color-red"></div>
+                        <div class="zelle-conteiner-color-white"></div>
+                        <div class="zelle-conteiner-color-green"></div>
+                    </div>
+                    <div class="email-detail"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    <div class="email-search">
+                        <form id="email" class="email-search">
+                            <input type="email" name="Enter your email" placeholder="Enter your email">
+                        </form>
+                        <button type="submit" value="Subscribe" form="email">Subscribe</button>
+                    </div>
                 </div>
             </div>
+        </div>
             
-            <div class="teacher">
-                <div class="teacher-text">Our Teachers</div>
-                <div class="teacher-face">
-
-                    <div class="teacher-face-blok red teacher-red">
-                        <div class="teacher-face-blok-foto">
-                            <!--<img src="img/teacher.png" width="163" height="171">-->
+        <div class="teacher">
+            <div class="teacher-text">Our Teachers</div>
+            <div class="teacher-face">
+                <div class="teacher-face-blok red teacher-red">
+                    <div class="teacher-face-blok-foto">
+                        <img src="img/teacher.png" width="163" height="171">
+                    </div>
+                    <div class="teacher-face-blok-description">
+                        <div class="teacher-face-blok-description-name">
+                            <div class="description-name">Jenny Doe</div>
+                            <div class="description-professor">Professor of Matematic</div>
                         </div>
-                        <div class="teacher-face-blok-description">
-                            <div class="teacher-face-blok-description-name">
-                                <div class="description-name">Jenny Doe</div>
-                                <div class="description-professor">Professor of Matematic</div>
-                            </div>
+                        <div class="teacher-face-blok-description-zelle-blok">
                             <div class="teacher-face-blok-description-zelle"></div>
-                            <div class="teacher-face-blok-description-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </div>
-                            <div class="teacher-face-blok-description-icons">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </div>
+                        </div>
+                        <div class="teacher-face-blok-description-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </div>
+                        <div class="teacher-face-blok-description-icons">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
                         </div>
                     </div>
-                    <div class="teacher-face-blok yellow teacher-yellow">
-                        <div class="teacher-face-blok-foto">
-                            <!--<img src="img/teacher.png" width="163" height="171">-->
+                </div>
+                <div class="teacher-face-blok yellow teacher-yellow">
+                    <div class="teacher-face-blok-foto">
+                        <img src="img/teacher.png" width="163" height="171">
+                    </div>
+                    <div class="teacher-face-blok-description">
+                        <div class="teacher-face-blok-description-name">
+                            <div class="description-name">John Doe</div>
+                            <div class="description-professor">Lecturer of Desing</div>
                         </div>
-                        <div class="teacher-face-blok-description">
-                            <div class="teacher-face-blok-description-name">
-                                <div class="description-name">John Doe</div>
-                                <div class="description-professor">Lecturer of Desing</div>
-                            </div>
+                        <div class="teacher-face-blok-description-zelle-blok">
                             <div class="teacher-face-blok-description-zelle"></div>
-                            <div class="teacher-face-blok-description-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </div>
-                            <div class="teacher-face-blok-description-icons">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </div>
+                        </div>
+                        <div class="teacher-face-blok-description-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </div>
+                        <div class="teacher-face-blok-description-icons">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
                         </div>
                     </div>
-                    <div class="teacher-face-blok green teacher-green">
-                        <div class="teacher-face-blok-foto">
-                            <!--<img src="img/teacher.png" width="163" height="171">-->
+                </div>
+                <div class="teacher-face-blok green teacher-green">
+                    <div class="teacher-face-blok-foto">
+                        <img src="img/teacher.png" width="163" height="171">
+                    </div>
+                    <div class="teacher-face-blok-description">
+                        <div class="teacher-face-blok-description-name">
+                            <div class="description-name">James Doe</div>
+                            <div class="description-professor">Professor of Economics</div>
                         </div>
-                        <div class="teacher-face-blok-description">
-                            <div class="teacher-face-blok-description-name">
-                                <div class="description-name">James Doe</div>
-                                <div class="description-professor">Professor of Economics</div>
-                            </div>
+                        <div class="teacher-face-blok-description-zelle-blok">
                             <div class="teacher-face-blok-description-zelle"></div>
-                            <div class="teacher-face-blok-description-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </div>
-                            <div class="teacher-face-blok-description-icons">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </div>
+                        </div>
+                        <div class="teacher-face-blok-description-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </div>
+                        <div class="teacher-face-blok-description-icons">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
                         </div>
                     </div>
-                    <div class="teacher-face-blok grey teacher-grey">
-                        <div class="teacher-face-blok-foto">
-                            <!--<img src="img/teacher.png" width="163" height="171">-->
+                </div>
+                <div class="teacher-face-blok grey teacher-grey">
+                    <div class="teacher-face-blok-foto">
+                        <img src="img/teacher.png" width="163" height="171">
+                    </div>
+                    <div class="teacher-face-blok-description">
+                        <div class="teacher-face-blok-description-name">
+                            <div class="description-name">Jenny Doe</div>
+                            <div class="description-professor">Professor of Matematic</div>
                         </div>
-                        <div class="teacher-face-blok-description">
-                            <div class="teacher-face-blok-description-name">
-                                <div class="description-name">Jenny Doe</div>
-                                <div class="description-professor">Professor of Matematic</div>
-                            </div>
+                        <div class="teacher-face-blok-description-zelle-blok">
                             <div class="teacher-face-blok-description-zelle"></div>
-                            <div class="teacher-face-blok-description-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </div>
-                            <div class="teacher-face-blok-description-icons">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </div>
+                        </div>
+                        <div class="teacher-face-blok-description-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium, aliquam. </div>
+                        <div class="teacher-face-blok-description-icons">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
                         </div>
                     </div>
-
-                </div></div>
-                
-            <div class="zelle-three-color">
-                <div class="zelle-conteiner-color-red"></div>
-                <div class="zelle-conteiner-color-yellow"></div>
-                <div class="zelle-conteiner-color-green"></div>
+                </div>
             </div>
-            <div class="video">
-                <div class="video-flex">
+        </div>
+                
+        <div class="zelle-three-color">
+            <div class="zelle-conteiner-color-red"></div>
+            <div class="zelle-conteiner-color-yellow"></div>
+            <div class="zelle-conteiner-color-green"></div>
+        </div>
+
+        <div class="video">
+            <div class="video-flex">
                 <div class="video-clip">
                     <video controls preload="auto">
-                        <source src="img/Reebok - Sound Of Combat.mp4">
+                        <source src="..."> <!--Здесь должна быть ссылка на видео!-->
                     </video>
                 </div>
                 <div class="video-blok">
@@ -431,74 +579,252 @@
                     </div>
                     <div class="video-blok-button"> Watch More > </div>
                 </div>
-            </div></div>
+            </div>
+        </div>
 
-            <div class="twitter">
-                <div class="twitter-icon">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </div>
-                <div class="zelle-three-color-yellow">
-                    <div class="zelle-conteiner-color-red"></div>
-                    <div class="zelle-conteiner-color-yellow"></div>
-                    <div class="zelle-conteiner-color-white"></div>
-                </div>
-                <div class="twitter-text">
-                    <h4> Sed congue"
-                        <span class="colortext">@pressjam:</span> blandit faucibus @envato for lunch! <span class="colortext"> #pressjam #pizza #yum!</span>"</h4>
-                    <h6> 5 hours ago </h6>
-                    <h5> Follow Us - @themecourses </h5>
+        <div class="twitter">
+            <div class="twitter-size">
+                <div class="twitter-container">
+                    <div class="twitter-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                    <div class="zelle-three-color-yellow">
+                        <div class="zelle-conteiner-color-red"></div>
+                        <div class="zelle-conteiner-color-yellow"></div>
+                        <div class="zelle-conteiner-color-white"></div>
+                    </div>
+                    <div class="twitter-text">
+                        <h4> Sed congue"
+                            <span class="colortext">@pressjam:</span> blandit faucibus @envato for lunch! <span class="colortext"> #pressjam #pizza #yum!</span>"</h4>
+                        <h6> 5 hours ago </h6>
+                        <h5> Follow Us - @themecourses </h5>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="community">
-                <div class="community-text"> Community Life </div>
-                <div class="community-blok">
-                    <div class="community-blok-fight">
-                        <div class="community-blok-fight-big-line"></div>
-                        <div class="community-blok-fight-caption"> EVENTS </div>
+        <div class="community">
+            <div class="community-text"> Community Life </div>
+            <div class="community-blok">
+                <div class="community-blok-fight">
+                    <div class="community-blok-fight-caption"> EVENTS </div>
+                    <div class="community-blok-fight-circle-big">
                         <div class="community-blok-fight-circle">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
                         </div>
-                        <div class="community-blok-fight-small-line"></div>
-                        <div class="community-blok-fight-text">
-                            <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
-                        </div>
                     </div>
-                    <div class="community-blok-second">
-                        <div class="community-blok-second-big-line"></div>
-                        <div class="community-blok-second-caption"> BLOG </div>
+                    <div class="community-blok-fight-small-line"></div>
+                    <div class="community-blok-fight-text">
+                        <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
+                    </div>
+                </div>
+                <div class="community-blok-second">
+                    <div class="community-blok-second-caption"> BLOG </div>
+                    <div class="community-blok-second-circle-big">
                         <div class="community-blok-second-circle">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                         </div>
-                        <div class="community-blok-second-small-line"></div>
-                        <div class="community-blok-second-text">
-                            <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
-                        </div>
                     </div>
-                    <div class="community-blok-third">
-                        <div class="community-blok-third-big-line"></div>
-                        <div class="community-blok-third-caption"> PUBLISHERS </div>
+                    <div class="community-blok-second-small-line"></div>
+                    <div class="community-blok-second-text">
+                        <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
+                    </div>
+                </div>
+                <div class="community-blok-third">
+                    <div class="community-blok-third-caption"> PUBLISHERS </div>
+                    <div class="community-blok-third-circle-big">
                         <div class="community-blok-third-circle">
                             <i class="fa fa-file" aria-hidden="true"></i>
                         </div>
-                        <div class="community-blok-third-small-line"></div>
-                        <div class="community-blok-third-text">
-                            <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
+                    </div>
+                    <div class="community-blok-third-small-line"></div>
+                    <div class="community-blok-third-text">
+                        <h6> Vestibulum eget odio arcu. Aenean at arcu dictum, gravida metus nec, interdum mauris. </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="zelle-three-color">
+            <div class="zelle-conteiner-color-red"></div>
+            <div class="zelle-conteiner-color-yellow"></div>
+            <div class="zelle-conteiner-color-green"></div>
+        </div>
+
+        <div class="test">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">                                
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>                            
+                <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/back4.png" alt="...">
+                        <div class="carousel-caption">
+                            <div class="carousel-foto">
+                                <img src="img/man.png" alt="man">
+                            </div>
+                            <div class="carousel-text">
+                                <h3> Testimonial I</h3>
+                                <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat viverra velit. Morbi maximus odio leo, non scelerisque eros efficitur id. Suspendisse at tristique ante. Etiam id fermentum odio. </h5>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/back4.png" alt="...">
+                        <div class="carousel-caption">
+                            <div class="carousel-foto">
+                                <img src="img/man2.png" alt="man2">
+                            </div>
+                            <div class="carousel-text">
+                                <h3> Testimonials II</h3>
+                                <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat viverra velit. Morbi maximus odio leo, non scelerisque eros efficitur id. Suspendisse at tristique ante. Etiam id fermentum odio. </h5>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/back4.png" alt="...">
+                        <div class="carousel-caption">
+                            <div class="carousel-foto">
+                                <img src="img/man3.png" alt="man3">
+                            </div>
+                            <div class="carousel-text">
+                                <h3> Testimonials III</h3>
+                                <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat viverra velit. Morbi maximus odio leo, non scelerisque eros efficitur id. Suspendisse at tristique ante. Etiam id fermentum odio. </h5>
+                            </div>
+                        </div>
+                        </div>
+                </div>                            
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="map">
+                <img src="img/map.png" height="316px" width="100%" usemap="#Navigation">
+                <map id="Navigation" name="Navigation">
+                    <area shape="poly" coords="500, 200, 100, 200" alt="We are here">
+                </map>
+        </div>
+
+        <div class="last-color">
+            <div class="last">
+                <div class="last-blok">
+                    <div class="last-blok-one">
+                        <div class="last-button red"> ABOUT US 
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <div class="last-text">
+                            <h6><span class="text-font">Per an suas quot praesent, ei senserit persecuti mel. </span> <br>
+                            Aenean tincidunt ac tellus lobortis fringilla. Phasellus dictum auctor convallis.</h6>
+                        </div>
+                        <div class="last-contact">
+                            <div class="last-contact-line">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                (800)2000-600
+                            </div>
+                            <div class="last-contact-line">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+                                spam@sample.com
+                            </div>
+                            <div class="last-contact-line">  
+                                <i class="fa fa-link" aria-hidden="true"></i> 
+                                www.samole.com
+                            </div>
+                            <div class="last-contact-line">    
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                250 Biscaune Blvd. (Norht) 11st Floor <br> New World Tower Miami 33148 
+                            </div>
+                        </div>
+                        <div class="last-icon">
+                            <div class="last-icon-badge">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </div>
+                            <div class="last-icon-badge">
+                                <i class="fa fa-skype" aria-hidden="true"></i>
+                            </div>
+                            <div class="last-icon-badge">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </div>
+                            <div class="last-icon-badge">
+                                <i class="fa fa-rss" aria-hidden="true"></i>
+                            </div>
+                            <div class="last-icon-badge">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-blok-two">
+                        <div class="last-button-two yellow"> LATEST COURSES 
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="last-blok-two-name">
+                            <div class="last-blok-two-name-foto"></div>
+                            <div class="last-blok-two-name-text">
+                                <p> Sed aliquet dui </p>
+                                <p> <span class="color-time"> 10 <sup>00</sup> 23.02.16 </span></p>
+                                <p> Duis condimentum, tortor fringilla dignissim dapibus, elit nibh suscipit massa. </p>                          
+                            </div>
+                        </div>
+                        <div class="last-blok-two-line"></div>
+                        <div class="last-blok-two-name">
+                            <div class="last-blok-two-name-foto"></div>
+                            <div class="last-blok-two-name-text">
+                                <p> Sed aliquet dui </p>
+                                <p> <span class="color-time"> 15 <sup>30</sup>23.02.16 </span></p>
+                                <p> Duis condimentum, tortor fringilla dignissim dapibus, elit nibh suscipit massa. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-blok-three">
+                        <div class="last-button-three green"> CONTACT US
+                            <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                        </div>
+                        <div class="last-three-review">
+                            <form id="rev" class="review">
+                                <input type="name" name="name" placeholder="Name*" form="rev" required autofocus>
+                                <input type="phone" name="phone" placeholder="Phone*" form="rev" required autofocus>
+                                <textarea form="rev" placeholder="Comments"></textarea>
+                            </form>
+                            <button type="submit" value="Subscribe" form="rev"> Submit > </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="zelle-three-color">
-                <div class="zelle-conteiner-color-red"></div>
-                <div class="zelle-conteiner-color-yellow"></div>
-                <div class="zelle-conteiner-color-green"></div>
-            </div>
-            <div class="test"></div>
-            <div class="map"></div>
-            <div class="last"></div>
-
         </div>
 
+        <div class="lower-color">
+            <div class="lower-size">
+                <div class="lower">
+                    <div class="lower-reserved">
+                        uniLearn 
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                        2010. All Right Reserved.
+                    </div>
+                    <div class="lower-menu-blok">
+                        <div class="lower-menu">Home</div>
+                        <div class="lower-menu">Features</div>
+                        <div class="lower-menu">Courses</div>
+                        <div class="lower-menu">Events</div>
+                        <div class="lower-menu">Shop</div>
+                        <div class="lower-menu-no-line">Contact</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+        <script src="server.js"></script>
         <script src="style.js"></script>
     </body>
 </html>
